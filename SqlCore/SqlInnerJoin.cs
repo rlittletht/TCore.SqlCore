@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TCore.Sql.SqlClient;
+namespace TCore.SqlCore;
 
 // ===============================================================================
 //  B H  S Q L  I N N E R  J O I N

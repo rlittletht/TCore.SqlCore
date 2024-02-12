@@ -1,4 +1,4 @@
-﻿namespace TCore.Sql.SqlClient;
+﻿namespace TCore.SqlCore;
 
 public enum TriState
 {

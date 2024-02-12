@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TCore.Sql.Core;
 
-namespace TCore.Sql.SqlClient;
+namespace TCore.SqlCore;
 
 public class SqlSelect
 {

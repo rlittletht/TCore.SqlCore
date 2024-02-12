@@ -2,7 +2,7 @@
 using System;
 using TCore;
 
-namespace TCore.Sql.Core;
+namespace TCore.SqlCore;
 
 public interface ISql
 {

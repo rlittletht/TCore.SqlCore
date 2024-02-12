@@ -4,11 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using SqlCore;
-using TCore.Sql.Core;
 using static System.String;
 
-namespace TCore.Sql.SqlClient;
+namespace TCore.SqlCore;
 
 // ===============================================================================
 //  S Q L  W H E R E

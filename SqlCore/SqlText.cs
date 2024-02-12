@@ -1,4 +1,4 @@
-﻿namespace SqlCore;
+﻿namespace TCore.SqlCore;
 
 public class SqlText
 {

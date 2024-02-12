@@ -2,7 +2,7 @@
 using System;
 using TCore.Exceptions;
 
-namespace TCore.Sql.Core;
+namespace TCore.SqlCore;
 
 public class SqlException : TcException
 {

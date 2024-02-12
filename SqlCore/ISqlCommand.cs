@@ -1,4 +1,4 @@
-﻿namespace TCore.Sql.Core;
+﻿namespace TCore.SqlCore;
 
 public delegate void AddParameterWithValueDelegate(string parameter, object value);
 public delegate void CustomizeCommandDelegate(ISqlCommand command);

@@ -1,4 +1,4 @@
-﻿namespace TCore.Sql.Core;
+﻿namespace TCore.SqlCore;
 
 public class TableAliases
 {

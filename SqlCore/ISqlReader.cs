@@ -1,5 +1,5 @@
 ﻿
-namespace TCore.Sql.Core;
+namespace TCore.SqlCore;
 
 public interface ISqlReader
 {
