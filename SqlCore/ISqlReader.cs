@@ -6,16 +6,16 @@ public interface ISqlReader
     public delegate void DelegateMultiSetReader<T>(ISqlReader sqlr, Guid crids, int recordSet, ref T t);
     public delegate void DelegateReader<T>(ISqlReader sqlr, Guid crids, ref T t);
 
-    public void ExecuteQuery(
-        SqlCommandTextInit cmdText,
-        string sResourceConnString,
-        CustomizeCommandDelegate? customizeDelegate = null);
-
-    public void ExecuteQuery(
-        string sQuery,
-        string? sResourceConnString,
-        CustomizeCommandDelegate? customizeDelegate = null,
-        TableAliases? aliases = null);
+//    public void ExecuteQuery(
+//        SqlCommandTextInit cmdText,
+//        string sResourceConnString,
+//        CustomizeCommandDelegate? customizeDelegate = null);
+//
+//    public void ExecuteQuery(
+//        string sQuery,
+//        string? sResourceConnString,
+//        CustomizeCommandDelegate? customizeDelegate = null,
+//        TableAliases? aliases = null);
 
     public Int16 GetInt16(int index);
     public Int32 GetInt32(int index);

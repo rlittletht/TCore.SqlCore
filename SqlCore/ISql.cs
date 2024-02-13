@@ -12,6 +12,7 @@ public interface ISql
     public ISqlTransaction? Transaction { get; }
 
     public ISqlCommand CreateCommand();
+    public ISqlReader CreateReader();
 
     public void ExecuteNonQuery(
         string commandText,
@@ -22,18 +23,25 @@ public interface ISql
         SqlCommandTextInit commandText,
         CustomizeCommandDelegate? customizeParams = null);
 
-    public T DoGenericQueryDelegateRead<T>(
+    public T ExecuteDelegatedQuery<T>(
         Guid crids,
         string query,
         ISqlReader.DelegateReader<T> delegateReader,
         TableAliases? aliases = null,
         CustomizeCommandDelegate? customizeDelegate = null) where T : new();
 
-    public T DoGenericMultiSetQueryDelegateRead<T>(
+    public T ExecuteMultiSetDelegatedQuery<T>(
         Guid crids,
         string sQuery,
         ISqlReader.DelegateMultiSetReader<T> delegateReader,
+        TableAliases? aliases = null,
         CustomizeCommandDelegate? customizeDelegate = null) where T : new();
+
+    public ISqlReader ExecuteQuery(
+        Guid crids,
+        string query,
+        TableAliases? aliases = null,
+        CustomizeCommandDelegate? customizeDelegate = null);
 
     public string SExecuteScalar(SqlCommandTextInit cmdText);
     public int NExecuteScalar(SqlCommandTextInit cmdText);
